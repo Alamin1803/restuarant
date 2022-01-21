@@ -1,18 +1,24 @@
 import React from 'react';
+import Fetch from './Components/Fetch/Fetch';
+import Restuarant from './Components/restuarant/Restuarant';
 
 const App = () => {
+
+
+  const style={
+    textAlign:'center',
+    fontSize:"30px",
+    fontWeight:600
+  }
   return (
     <div>
-      <h2>Demo project</h2>
-      <NestCom></NestCom>
+      <h2 style={style}>Demo Restuarant  Project</h2>
+      <Restuarant></Restuarant>
+      <Fetch></Fetch>
     </div>
   );
 };
  
-const NestCom=()=>{
-  return(
-    <h2>this website developed by md alamin</h2>
-  )
-}
+
 
 export default App;
